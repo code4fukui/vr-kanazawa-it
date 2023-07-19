@@ -1,0 +1,66 @@
+<script type="module">
+import * as eg from "https://js.sabae.cc/egvr.js";
+//import { cr, rgb, asset } from "https://js.sabae.cc/aframe.js";
+
+/*
+const scene = eg.scene;
+
+export const asset = (url) => {
+  console.log("asset", url)
+  const scene = document.body.querySelector("a-scene");
+  const assets = scene.querySelector("a-assets") || cr("a-assets", scene);
+  const a = cr("a-asset-item");
+  const aid = "asset" + (assets.childNodes.length + 1);
+  a.setAttribute("id", aid);
+  a.setAttribute("src", url);
+  assets.appendChild(a);
+  return "#" + aid;
+};
+
+export const cr = (tag, parent) => {
+  const c = document.createElement(tag);
+  if (parent) {
+    parent.appendChild(c);
+  }
+  return c;
+};
+
+const assets = {};
+const getAsset = (url) => {
+  const a = assets[url];
+  if (a) return a;
+  const a2 = asset(url);
+  assets[url] = a2;
+  return a2;
+};
+export const model = (asset_or_url, x = 0, y = 0, z = 0, ry = 0) => {
+  if (asset_or_url === undefined) {
+    alert(`eg.model(url, y, z, ry)`);
+    return;
+  }
+  const aid = typeof asset_or_url == "string" ? getAsset(asset_or_url) : asset_or_url;
+  const obj = cr("a-entity", scene);
+  obj.setAttribute("gltf-model", aid);
+  obj.setAttribute("position", { x, y, z });
+  obj.setAttribute("rotation", { x: 0, y: ry, z: 0 });
+  return obj;
+};
+*/
+
+eg.model("./sofa_r-nakagawa532.glb", 0, 0, -2, 90);
+
+/*
+const scene = cr("a-scene");
+scene.setAttribute("renderer", "colorManagement: true;");
+document.body.appendChild(scene);
+const aid = asset("./sofa_r-nakagawa532.glb");
+
+for (let i = -2; i <= 2; i++) {
+  const obj = cr("a-entity", scene);
+  obj.setAttribute("gltf-model", aid);
+  const s = Math.pow(2, i / 2);
+  obj.setAttribute("scale", { x: s, y: s, z: s });
+  obj.setAttribute("position", { x: s * 2.7 - 1, y: 0, z: -1 });
+}
+*/
+</script>
