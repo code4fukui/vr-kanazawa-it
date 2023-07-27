@@ -19,7 +19,8 @@ with [egvr.js](https://github.com/code4fukui/egvr/)
 
 ### KANTA (直立した人)
 
-- [kanta.glb](https://code4fukui.github.io/vr-kanazawa-it/kanta.glb) (金沢IT部活で動画で撮影、フォトグラメトリツール[photogra-method](https://github.com/code4fukui/photogra-method)で3Dモデル化)
+- [kanta.usdz](https://code4fukui.github.io/vr-kanazawa-it/kanta.usdz) (金沢IT部活で動画で撮影(iPhone 13Pro, 4K24fps)、フォトグラメトリツール[photogra-method](https://github.com/code4fukui/photogra-method)で3Dモデル化(reduced,3fps))
+- [kanta.glb](https://code4fukui.github.io/vr-kanazawa-it/kanta.glb) ([Blender](https://www.blender.org/)でUSDZプラグインで読み込み、サイズを変更、glTFで出力)
 
 ### ローポリ銃
 
